@@ -177,6 +177,7 @@ OPERATOR_ARGS = Dict(
 
 SENSOR_ARGS = OPERATOR_ARGS + Dict(
     {
+        OptionalKey("delta"): INTERVAL,
         OptionalKey("poke_interval"): INTERVAL_INT_SECONDS,
         OptionalKey("soft_fail"): BOOLEAN,
         OptionalKey("timeout"): POSITIVE_INT,
